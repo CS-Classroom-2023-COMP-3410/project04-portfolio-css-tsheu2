@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Performance Cars</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Car Enthusiast</a>
+        
+        <!-- Hamburger Icon (Checkbox) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <!-- Navigation Links -->
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="../performance/performance.html">Performance</a></li>
+                <li><a href="../brands/brands.html">Brands</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- Page Title -->
+  <header class="bg-secondary text-white text-center py-5">
+    <h1 class="display-4">Performance</h1>
+    <p class="lead">    Compare BMW, Audi, and Mercedes-Benz performance</p>
+  </header>
+
+    </header>
+    
+    <main class="container my-5">
+        <section>
+            <h2>Performance Comparison</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Car Model</th>
+                        <th>Horsepower <a href="#hp-info-modal" class="hp-icon"><i class="fas fa-info-circle"></i></a></th>
+                        <th>MSRP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BMW X6M</td>
+                        <td>617 hp</td>
+                        <td>$129,700</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-AMG GT 63</td>
+                        <td>577 hp</td>
+                        <td>$153,350</td>
+                    </tr>
+                    <tr>
+                        <td>BMW M3</td>
+                        <td>473 hp</td>
+                        <td>$76,700</td>
+                    </tr>
+                    <tr>
+                        <td>BMW X3M</td>
+                        <td>473 hp</td>
+                        <td>$73,895</td>
+                    </tr>
+                    <tr>
+                        <td>BMW M2</td>
+                        <td>473 hp</td>
+                        <td>$65,500</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-AMG GT 55</td>
+                        <td>469 hp</td>
+                        <td>$137,550</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-AMG CLA 45 S</td>
+                        <td>416 hp</td>
+                        <td>$67,050</td>
+                    </tr>
+                    <tr>
+                        <td>Audi RS3</td>
+                        <td>401 hp</td>
+                        <td>$61,995</td>
+                    </tr>
+                    <tr>
+                        <td>Audi TT RS</td>
+                        <td>394 hp</td>
+                        <td>$74,995</td>
+                    </tr>
+                    <tr>
+                        <td>BMW M340i</td>
+                        <td>386 hp</td>
+                        <td>$60,200</td>
+                    </tr>
+                    <tr>
+                        <td>BMW M240i</td>
+                        <td>382 hp</td>
+                        <td>$51,895</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <!-- Modal -->
+    <div id="hp-info-modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Horsepower Information</h5>
+                    <a href="#" class="btn-close" aria-label="Close"></a>
+                </div>
+                <div class="modal-body">
+                    <h6>What is Horsepower?</h6>
+                    <p>Horsepower is a unit of measurement for power. It indicates the amount of work a vehicle's engine can do, helping to determine the vehicle's acceleration and top speed.</p>
+                    <img src="../images/hp.png" class="img-fluid" alt="Horsepower Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="text-white text-decoration-none">2025 - TJ - Car Enthusiast</p>
+        <p>
+            <a href="https://www.bmwusa.com" class="text-white text-decoration-none">BMW Website</a> |
+            <a href="https://www.audiusa.com" class="text-white text-decoration-none">Audi Website</a> |
+            <a href="https://www.mbusa.com" class="text-white text-decoration-none">Mercedes-Benz Website</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website dedicated to German cars, showcasing BMW, Audi, and Mercedes-Benz.">
+    <title>German Cars: BMW, Audi, Benz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark text-decoration-none">
+        <a class="navbar-brand text-decoration-none" href="../responsive/index.html">Car Enthusiast</a>
+        
+        <!-- Hamburger Icon (Checkbox) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <!-- Navigation Links -->
+        <div class="navbar-nav text-decoration-none">
+            <ul>
+                <li><a href="../responsive/index.html">Home</a></li>
+                <li><a href="about/about.html">About</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
+                <li><a href="performance/performance.html">Performance</a></li>
+                <li><a href="brands/brands.html">Brands</a></li>
+                <li><a href="gallery/index.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-secondary text-white text-center py-5">
+        <h1 class="display-4">Welcome to My German Car Enthusiast Page</h1>
+        <p class="lead">BMW excels in performance, Audi in innovation, and Mercedes-Benz in luxury.</p>
+        <!-- BMW Track Video -->
+        <div class="mt-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dB4IbEE_NWs?mute=1"
+            title="BMW Nurburgring" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <h2>My Passion for German Cars</h2>
+                <p>Welcome to a space dedicated to the most exciting German automotive brands: BMW, Audi, and Mercedes-Benz. From performance to design, German engineering stands unparalleled!</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/f80m3.png" class="img-fluid rounded" alt="F80 M3">
+            </div>
+        </section>
+
+        <section>
+            <h2>Favorite Models</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-primary fav">BMW M2</li>
+                <li class="list-group-item text-primary fav">BMW M240</li>
+                <li class="list-group-item text-primary fav">BMW M3</li>
+                <li class="list-group-item text-primary fav">BMW M340</li>
+                <li class="list-group-item text-danger fav">Audi RS5</li>
+                <li class="list-group-item text-success fav">Mercedes-AMG GT</li>
+                <li class="list-group-item text-success fav">Mercedes-AMG SL 63</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="text-white text-decoration-none">2025 - TJ - Car Enthusiast</p>
+        <p>
+            <a href="https://www.bmwusa.com" class="text-white text-decoration-none">BMW Website</a> |
+            <a href="https://www.audiusa.com" class="text-white text-decoration-none">Audi Website</a> |
+            <a href="https://www.mbusa.com" class="text-white text-decoration-none">Mercedes-Benz Website</a>
+        </p>
+    </footer>
+</body>
+</html>

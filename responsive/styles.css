@@ -1,0 +1,538 @@
+/* General Navbar Styles */
+.navbar-nav .nav-link {
+    padding-left: 20px; /* Spacing between navbar items */
+    font-size: 1.1rem; /* Font size for links */
+    display: inline-block;
+    transition: transform 0.2s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Navbar Link Hover Effects */
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1) translateY(-3px); /* Slight scale and vertical shift on hover */
+    text-shadow: 0 0 1px #000000, 0 0 1px #000000; /* Add text shadow for emphasis */
+}
+
+/* Fade-in Effect for Elements */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation on elements */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for scaling and shadow */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Counter Styling */
+.counter {
+    font-weight: bold;
+    color: #007bff; /* Bold blue color for counters */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table td, table th {
+    padding: 10px; /* Add spacing to table cells */
+}
+
+table th, table td {
+    text-align: center; /* Center-align text in table */
+}
+
+/* Striped Table Rows */
+.table-striped tbody tr:nth-child(odd) {
+    background-color: lightblue; /* Light blue for odd rows */
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: darkgray; /* Dark gray for even rows */
+}
+
+/* Scroll Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Initial state before animation */
+}
+
+/* Scroll Animation Visible State */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0); /* Reset transform on visibility */
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1050;
+    padding-top: 100px;
+}
+
+/* Modal Targeted (Display) */
+.modal:target {
+    display: block; /* Show modal when targeted */
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background for footer */
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Footer Link Hover Effect */
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hover Icon Styling */
+.hp-icon {
+    cursor: pointer;
+    color: #007bff;
+}
+
+/* Hover Effect for Icon */
+.hp-icon:hover {
+    color: #0056b3;
+}
+
+/* Gallery Styles */
+.gallery-img, .gallery-img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Round corners for images */
+}
+
+.gallery-img {
+    object-position: left; /* Align to the left */
+}
+
+.gallery-img2 {
+    object-position: -20px; /* Slight left offset for gallery images */
+}
+
+/* Gallery Grid Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive grid */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for gallery items */
+    position: relative;
+    height: 300px; /* Fixed height for uniformity */
+}
+
+/* Gallery Item Hover Effect */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.img-hover:hover {
+    transform: scale(1.05); /* Zoom on hover */
+    transition: transform 0.3s ease;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Section Styles */
+main {
+    padding: 40px;
+}
+
+/* Section Header Styles */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+img:hover {
+    transform: scale(1.05); /* Zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* List Styling */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Table Row Hover Effect */
+table tbody tr:hover {
+    background-color: #f1f1f1; /* Change background color when hovering over a row */
+    transform:scale(1.03); /* Slight horizontal shift to give a 3D effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold; /* Make the text bold on hover */
+}
+
+/* Bounce effect (home page) */
+ul.list-group .list-group-item:hover {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile (375px and below) */
+@media only screen and (max-width: 375px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p, h3 {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+/* Tablet (768px and below) */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p, h3 {
+        font-size: 1.1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        height: 250px; /* Adjust height for tablets */
+    }
+}
+
+/* Desktop (1440px and above) */
+@media only screen and (min-width: 1440px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p, h3 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+}
+
+.my-car {
+    width: 100%;         /* Make the image take up the full width of its container */
+    max-width: 600px;    /* Maximum width (e.g., 600px) */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 8px;  /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for style */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Optional: add hover effect */
+}
+
+.my-car:hover {
+    transform: scale(1.05); /* Optional: zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: enhanced shadow on hover */
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+/* Navbar brand */
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect for rotation and glow */
+.navbar-brand:hover {
+    transform: rotate(8deg); /* Rotate slightly clockwise */
+    text-shadow: 0 0 8px #00ff9d, 0 0 12px #00ffdd, 0 0 16px #c300ff; /* Glowing effect */
+}
+
+/* Navbar links */
+.navbar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav ul li {
+    margin-left: 20px;
+}
+
+.navbar-nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove default underline */
+    font-size: 1.1rem;
+    position: relative; /* For the sliding underline */
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth rotation and color change */
+}
+
+/* Sliding underline setup */
+.navbar-nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Space between text and underline */
+    width: 0%;
+    height: 2px; /* Thickness of the underline */
+    background-color: #ffcc00;
+    transition: width 0.3s ease; /* Smooth sliding effect */
+}
+
+/* Hover effect */
+.navbar-nav ul li a:hover {
+    transform: rotate(8deg); /* Rotate slightly counterclockwise */
+    color: #ffcc00; /* Optional: change color on hover */
+}
+
+.navbar-nav ul li a:hover::after {
+    width: 100%; /* Extend underline to full width */
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Styling for the hamburger icon (label) */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+footer a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+.lead{
+    font-style: italic;
+    color: white;
+}
+
+/* Show the hamburger icon on mobile devices */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .navbar-nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navbar-nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navbar-nav ul li a {
+        font-size: 1.3rem;
+    }
+
+    /* When checkbox is checked, show the navigation */
+    .menu-toggle:checked + .menu-icon + .navbar-nav {
+        display: block;
+    }
+
+    /* Display the hamburger icon when screen width is small */
+    .menu-icon {
+        display: block;
+    }
+}
+

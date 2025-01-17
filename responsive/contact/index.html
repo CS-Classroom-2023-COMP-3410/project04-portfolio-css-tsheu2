@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for the German Cars enthusiast website.">
+    <title>Contact Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css"> <!-- Custom styles -->
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Car Enthusiast</a>
+        
+        <!-- Hamburger Icon (Checkbox) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <!-- Navigation Links -->
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="../performance/performance.html">Performance</a></li>
+                <li><a href="../brands/brands.html">Brands</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-secondary text-white text-center py-5">
+        <h1 class="display-4">Contact Me</h1>
+        <p class="lead">Feel free to reach out with any thoughts, questions, or feedback.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container my-5">
+        <h3>Contact me with thoughts, questions, or opinions.</h3>
+
+        <form action="mailto:TJ@example.com" method="post" enctype="text/plain" class="bg-white p-4 rounded shadow-sm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message:</label>
+                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Email</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="text-white text-decoration-none">2025 - TJ - Car Enthusiast</p>
+        <p>
+            <a href="https://www.bmwusa.com" class="text-white text-decoration-none">BMW Website</a> |
+            <a href="https://www.audiusa.com" class="text-white text-decoration-none">Audi Website</a> |
+            <a href="https://www.mbusa.com" class="text-white text-decoration-none">Mercedes-Benz Website</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
